@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+      * {
+        box-sizing: border-box;
+      }
+
+      .row {
+        margin: 0px -16px;
+      }
+
+      /* Add padding BETWEEN each column */
+      .row,
+      .row > .column50 {
+        padding: 12px;
+      }
+
+      /* One center column 60% */
+      .column60 {
+       width: 60%;
+       justify-content: center;
+       margin-left: auto;
+       margin-right: auto;
+      }
+
+      /* Two columns */
+      .column50 {
+       width: 50%;
+       float:left;
+      }
+
+      /* One center column 70% */
+      .column75 {
+       width: 75%;
+       justify-content: center;
+       margin-left: auto;
+       margin-right: auto;
+      }
+
+      /* Clear floats after rows */ 
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }     
+        .column50 img {
+        margin-top: 20px;
+        margin-bottom: -20px;
+      }
+
+       .column60 img {
+        margin-top: 35px;
+      }
+
+      .column75 img {
+        margin-top: 35px;  
+      }
+
+      /* Responsive layout - makes a two column-layout instead of four columns */
+      @media screen and (max-width: 1000px) {
+        .column {
+          width: 50%;
+        }
+      }
+
+      /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 600px) {
+        .column60 {
+          width: 100%;
+          justify-content: center;
+          margin-left: auto;
+          margin-right: auto;
+        } 
+        .column60 img {
+        margin-top: 20px;  
+      }
+         .column50 {
+          width: 100%;
+        } 
+        .column50 img {
+        margin-top: 20px;  
+      }
+         .column75 {
+          width:95%;
+        } 
+          .column75 img {
+        margin-top: 20px;  
+        }
+      }
+    
+    </style>
+
+    <title>Loose Leaf</title>
+    <link rel="icon" type="image/x-icon" href="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/IMG_5040_5-removebg-preview.png?v=1696694077007">
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    <script src="/script.js" defer></script>
+    
+  </head>  
+  
+  <body>
+  
+<!-- MAIN (Center website) -->
+    <div class="main">
+
+      <a id="top"></a>
+      <h1><a class="one" href="index.html">Julie Kerisel</a></h1>
+
+    <!-- MENU -->
+      <div class="mobile-header">
+        <div class="hamburger-menu" onclick="toggleMenu()">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
+
+      <nav class="menu">
+        <ul>
+          <li class="submenu">
+            <span> Photo </span>
+            <ul>
+              <li><a href="film.html">Analog</a></li>
+              <li><a href="digital.html">Digital</a></li>
+            </ul>
+          </li>
+          <li class="submenu">
+            <span>Collage </span>
+            <ul>
+              <li><a href="book-one.html">Book I</a></li>
+              <li><a href="book-two.html">Book II</a></li>
+              <li><a href="book-three.html">Book III</a></li>
+              <li><a href="looseleaf.html">Loose Leaf</a></li>
+              <li><a href="wallndoors.html">Walls and Doors</a></li>
+            </ul>
+          </li>
+          <li class="menu">
+            <span> <a href="about.html">About</a> </span>
+          </li>
+        </ul>
+      </nav>
+
+      <h2> Loose Leaf</h2>
+      <h3> 2018-2019</h3>
+    
+    <!-- Portfolio Gallery Grid -->
+      <div class="column60">
+          <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/food_collage.jpeg?v=1696358214297" alt="Gross Food" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor, media">
+          <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/woman_cameras_collage.jpg?v=1696358215011" alt="Gaze" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor, content-book23">
+      </div>
+
+      <div class="row">
+        <div class="column50">
+          <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/developing1.jpg?v=1696358214646" alt="Developer" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor, content-book23">
+        </div>
+        
+        <div class="column50">
+          <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/developing2.jpg?v=1696358215467" alt="Developer 2" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor, content-book23">
+       </div>
+      </div> 
+
+      <div class="column75">
+          <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/hand_collage.jpeg?v=1696362529493" alt="Hold On" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor, content-book23">
+          <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/mushroom-collage.jpeg?v=1696362530517" alt="Mushrooms" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor, content-book23">
+          <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/central_park_collage.jpeg?v=1696362532205" alt="Scissors" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor, content-book23">
+          <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/fly-collage.jpeg?v=1696362533738" alt="La Mouche" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor, content-book23">
+          <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/broken-glass_collage.jpeg?v=1696362531389" alt="Glass" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor, content-book23">
+      </div>
+
+     <!-- The Modal -->
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <div class="modal-content">
+          <div class="mySlides">
+            <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/food_collage.jpeg?v=1696358214297" alt="Gross Food" style="width:70%">
+          </div>
+
+          <div class="mySlides">
+            <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/woman_cameras_collage.jpg?v=1696358215011" alt="Gaze" style="width:55%">
+          </div>
+
+           <div class="mySlides">
+            <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/developing1.jpg?v=1696358214646" alt="Developer" style="width:55%">
+          </div>
+
+          <div class="mySlides">
+            <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/developing2.jpg?v=1696358215467" alt="Developer 2" style="width:55%">
+          </div>
+
+          <div class="mySlides">
+           <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/hand_collage.jpeg?v=1696362529493" alt="Hold On" style="width:90%">
+          </div>
+
+          <div class="mySlides">
+            <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/mushroom-collage.jpeg?v=1696362530517" alt="Mushrooms" style="width:90%">
+          </div>
+
+          <div class="mySlides">
+            <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/central_park_collage.jpeg?v=1696362532205" alt="Scissors" style="width:90%">
+          </div>
+
+           <div class="mySlides">
+            <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/fly-collage.jpeg?v=1696362533738" alt="La Mouche" style="width:90%">
+          </div>
+
+           <div class="mySlides">
+            <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/broken-glass_collage.jpeg?v=1696362531389" alt="Glass" style="width:90%">
+          </div>
+
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="center" style= "margin-top: 60px">
+        <a href="#top" class = "btn" style="text-decoration:none"> Back to top </a>
+      </div>
+
+      <footer>
+        <p>&copy; Julie Kerisel 2024 </p>
+      </footer>
+
+  <!-- END MAIN -->
+    </div>
+  </body>
+</html>

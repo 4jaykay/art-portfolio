@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <style>
+
+      * {
+          box-sizing: border-box;
+        }
+
+      .row {
+        margin: 8px -16px;
+        }
+
+      /* Add padding BETWEEN each column */
+      .row,
+      .row > .column {
+        padding: 8px;
+      }
+
+      /* Create two equal columns that floats next to each other */
+      .column {
+        float: left;
+        width: 50%;
+      }
+
+      .column img {
+        margin-top: 12px;
+      }
+
+      /* Clear floats after rows */ 
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }    
+
+      /* Responsive layout - makes a two column-layout instead of four columns */
+      @media screen and (max-width: 900px) {
+        .column {
+          width: 50%;
+        }
+      }
+
+      /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 600px) {
+        .column {
+          width: 100%;
+        }
+      }
+
+    </style>
+
+    <title>Film</title>
+    <link rel="icon" type="image/x-icon" href="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/IMG_5040_5-removebg-preview.png?v=1696694077007">
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    <script src="/script.js" defer></script>
+     
+  </head>  
+  
+  <body>
+    <div class="main">
+      
+      <a id="top"></a>
+      <h1><a class="one" href="index.html">Julie Kerisel</a></h1>
+
+  <!-- MENU -->
+      <div class="mobile-header">
+        <div class="hamburger-menu" onclick="toggleMenu()">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
+
+      <nav class="menu">
+        <ul>
+          <li class="submenu">
+            <span> Photo </span>
+            <ul>
+              <li><a href="film.html">Analog</a></li>
+              <li><a href="digital.html">Digital</a></li>
+            </ul>
+          </li>
+          <li class="submenu">
+            <span>Collage </span>
+              <ul>
+                <li><a href="book-one.html">Book I</a></li>
+                <li><a href="book-two.html">Book II</a></li>
+                <li><a href="book-three.html">Book III</a></li>
+                <li><a href="looseleaf.html">Loose Leaf</a></li>
+                <li><a href="wallndoors.html">Walls and Doors</a></li>
+              </ul>
+          </li>
+          <li class="menu">
+            <span> <a href="about.html">About</a> </span>
+          </li>
+        </ul>
+      </nav>
+
+    <!-- PAGE CONTENT-->
+      <br>
+      <br>
+
+          <!-- Portfolio Gallery Grid -->
+      <div class="row">
+        <div class="column">
+          <div class="content">
+            <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/Lauren_2023.jpg?v=1726845692735" alt="Lauren 2023" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor" >
+            <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/IMG_4918.jpg?v=1695931536914" alt="Motun 2023" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+            <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/Eva_2023.jpg?v=1726845690120" alt="Eva" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+            <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/Phoebe_2014.jpg?v=1726845700373" alt="Phoebe" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+            <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/IMG_4938.jpeg?v=1696021717112" alt="Alice" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+           </div>
+        </div>
+
+        <div class="column">
+          <div class="content">
+            <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/IMG_4915.jpg?v=1695931537953" alt="Anna and Alice" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+            <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/Claire_2023.jpg?v=1726845686444" alt="Claire 2023" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor" > 
+            <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/Mila_2023.jpg?v=1726845695416" alt="Mila 2023" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+            <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/Steve_2023.jpg?v=1726845702767" alt="Steve" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+            <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/IMG_4944.jpeg?v=1696021661271" alt="Lauren" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+            <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/Anna_2023.jpg?v=1726845669547" alt="Anna" style="width:100%" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
+           <!--  <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/julie_brooklyn.jpeg?v=1696263434997" alt="Julie" style="width:100%" onclick="openModal();currentSlide(12)" class="hover-shadow cursor"> -->
+          </div>
+        </div>
+
+       <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a> 
+
+          <div class="modal-content">
+            <div class="mySlides">
+              <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/Lauren_2023.jpg?v=1726845692735" style="width:100%">
+              <div class= "caption">
+                <center> Lauren, Brooklyn 2023 </center>
+              </div>
+            </div>
+
+            <div class="mySlides">
+              <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/IMG_4915.jpg?v=1695931537953" alt="Anna and Alice" style="width:100%">
+              <div class= "caption">
+                <center> Anna et Alice, Juno 2023 </center>
+              </div>
+            </div>
+
+             <div class="mySlides">
+              <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/IMG_4918.jpg?v=1695931536914" alt="Motun 2023"  style="width:100%">
+              <div class= "caption">
+                <center> Montun, Brooklyn 2023 </center>
+              </div>
+            </div>
+
+            <div class="mySlides">
+              <img src= "https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/Claire_2023.jpg?v=1726845686444" alt="Claire 2023"  style="width:100%">
+                <div class= "caption">
+                  <center> Claire, New York 2023 </center>
+              </div>
+            </div>
+
+            <div class="mySlides">
+              <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/Eva_2023.jpg?v=1726845690120" alt="Eva" style="width:100%">
+               <div class= "caption">
+                <center> Eva, Brooklyn 2023 </center>
+              </div>
+            </div>
+
+            <div class="mySlides">
+              <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/Mila_2023.jpg?v=1726845695416" alt="Mila 2023"  style="width:100%">
+              <div class= "caption">
+                <center> Mila, New York 2023 </center>
+              </div>
+            </div>
+
+            <div class="mySlides">
+              <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/Phoebe_2014.jpg?v=1726845700373" alt="Phoebe" style="width:100%">
+              <div class= "caption">
+                <center> Phoebe, New York 2014 </center>
+              </div>
+            </div>
+
+            <div class="mySlides">
+              <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/Steve_2023.jpg?v=1726845702767" alt="Steve" style="width:100%">
+              <div class= "caption">
+                <center> Steve, New York 2023 </center>
+              </div>
+            </div>
+
+            <div class="mySlides">
+              <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/IMG_4938.jpeg?v=1696021717112" alt="Alice" style="width:45%">
+              <div class= "caption">
+                <center> Alice, Juno 2023 </center>
+              </div>
+            </div>
+
+            <div class="mySlides">
+              <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/IMG_4944.jpeg?v=1696021661271" alt="Lauren" style="width:100%" >
+              <div class= "caption">
+                <center> Lauren, Brooklyn 2023 </center>
+              </div>
+            </div>
+
+            <div class="mySlides">
+              <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/Anna_2023.jpg?v=1726845669547" alt="Anna" style="width:100%">
+              <div class= "caption">
+                <center> Anna, Juno 2023 </center>
+              </div>
+            </div>
+
+            <!-- <div class="mySlides">
+              <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/julie_brooklyn.jpeg?v=1696263434997" alt="Julie" style="width:100%">
+              <div class= "caption">
+                <center> Julie, Brooklyn 2023 </center>
+              </div>
+            </div> -->
+
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+          </div>
+        </div>
+
+  <!-- END GRID -->
+      </div>
+
+      <div class="center" style= "margin-top: 60px">
+        <a href="#top" class = "btn" style="text-decoration:none" >Back to top</a>
+      </div>
+
+      <footer>
+        <p>&copy; Julie Kerisel 2024 </p>
+      </footer>
+
+<!-- END MAIN -->
+
+    </div>  
+  </body>
+</html>

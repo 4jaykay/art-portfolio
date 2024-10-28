@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      .row {
+        margin: 8px -16px;
+      }
+
+      /* Add padding BETWEEN each column */
+      .row,
+      .row > .column {
+        padding: 8px;
+      }
+
+      /* Create two equal columns that floats next to each other */
+      .column {
+        float: left;
+        width: 50%;
+      }
+
+      .column img {
+        margin-top: 18px;
+      }
+
+      /* Clear floats after rows */ 
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      } 
+
+      /* Responsive layout - makes a two column-layout instead of four columns */
+      @media screen and (max-width: 900px) {
+        .column {
+          width: 50%;
+        }
+      }
+
+      /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 600px) {
+        .column {
+          width: 100%;
+        }
+      }
+
+    </style>
+
+    <title>Digital</title>
+    <link rel="icon" type="image/x-icon" href="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/IMG_5040_5-removebg-preview.png?v=1696694077007">
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    <script src="/script.js" defer></script>
+   
+  </head>  
+  
+  <body>
+<!-- MAIN (Center website) -->
+
+    <div class="main">
+  
+      <a id="top"></a>
+      <h1><a class="one" href="index.html">Julie Kerisel</a></h1>
+
+      <div class="mobile-header">
+        <div class="hamburger-menu" onclick="toggleMenu()">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
+
+      <nav class="menu">
+        <ul>
+          <li class="submenu">
+            <span> Photo </span>
+            <ul>
+              <li><a href="film.html">Analog</a></li>
+              <li><a href="digital.html">Digital</a></li>
+            </ul>
+          </li>
+          <li class="submenu">
+            <span>Collage </span>
+            <ul>
+              <li><a href="book-one.html">Book I</a></li>
+              <li><a href="book-two.html">Book II</a></li>
+              <li><a href="book-three.html">Book III</a></li>
+              <li><a href="looseleaf.html">Loose Leaf</a></li>
+              <li><a href="wallndoors.html">Walls and Doors</a></li>   
+            </ul>
+          </li>
+          <li class="menu">
+            <span> <a href="about.html">About</a> </span>
+          </li>
+        </ul>
+      </nav>
+
+      <h2> 2013-2020</h2>
+      <h3></h3>
+
+      <!-- Portfolio Gallery Grid -->
+      <div class="row">
+        <div class="column">
+          <div class="content">
+            <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/Lauren_2013.JPG?v=1702663797309" alt="Lauren 2013" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+            <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/DSCF3155.JPG?v=1695755842662" alt="Alice" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+            <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/2C333BBB-830D-446E-BCC4-A73899C0E9BD.jpeg?v=1695926733371" alt="Self Portrait 1" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+            <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/65FA79E5-FFA1-4CCC-9AEC-DB5639B1E9EC_1_201_a.jpeg?v=1695927604885" alt="Eva Evelle" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+            <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/EB29DE22-F343-4906-918D-78FE9983F9BC.jpeg?v=1695927869164" alt="Alice FL 2017" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+            <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/85E45AC6-5388-491E-A05F-47EE1C680859.jpeg?v=1695928435002" alt="Roadtrip" style="width:100%" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
+            <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/0C40EF42-FFF0-4F4E-A305-9F037061DAD9.jpeg?v=1695928594476" alt="Seven Years" style="width:100%" onclick="openModal();currentSlide(13)" class="hover-shadow cursor">
+            <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/DSCF2409.JPG?v=1695928689648" alt="Montreal Green" style="width:100%" onclick="openModal();currentSlide(15)" class="hover-shadow cursor">
+            <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/DSCF3374.JPG?v=1695928728375" alt="Montreal 2018 Self Portrait" style="width:100%" onclick="openModal();currentSlide(17)" class="hover-shadow cursor">
+            <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/lauren_2018.JPG?v=1702655012088" alt="Lauren 2018" style="width:100%" onclick="openModal();currentSlide(19)" class="hover-shadow cursor">
+            <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/DSCF3937.JPG?v=1695928766169" alt="Alice Florida 2019" style="width:100%" onclick="openModal();currentSlide(21)" class="hover-shadow cursor">
+            <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/hazel.JPG?v=1702660885653" alt="Hazel" style="width:100%" onclick="openModal();currentSlide(23)" class="hover-shadow cursor">
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="content">
+            <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/Eva_2016.JPG?v=1702667079952" alt="EvaOleron2016" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+            <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/19E41815-BE3D-4154-89AC-B13CC3213BAA.jpeg?v=1695926915238" alt="Aicha" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">       
+            <!-- <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/B6C1046E-4B04-440E-B764-019564856A50_1_201_a.jpeg?v=1695927521948" alt="Mirror Self Portrait" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor"> !-->
+            <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/DSCF7626%202.JPG?v=1702668560830" alt="Self Portrait 2" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+            <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/lauren_2017.JPG?v=1702655011247" alt="Lauren 2017" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+            <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/9A3322E3-A2F0-41D7-8DBD-DB1406A43722.jpeg?v=1695927618077" alt="Saint Malo Self Portrait" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+            <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/Anna_2017.JPG?v=1702666296289" alt="Anna FL 2017" style="width:100%" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
+            <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/F56DAF34-999F-4906-A313-8FC4A025A8AD.jpeg?v=1695928453875" alt="FL Self Portrait" style="width:100%" onclick="openModal();currentSlide(14)" class="hover-shadow cursor">
+            <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/551BC066-6650-4C9A-A768-D072E5883E82.jpeg?v=1695928677462" alt="Self Portrait 2018" style="width:100%" onclick="openModal();currentSlide(16)" class="hover-shadow cursor">
+            <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/DSCF3072.JPG?v=1695928702844" alt="Alice Car" style="width:100%" onclick="openModal();currentSlide(18)" class="hover-shadow cursor">
+            <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/DSCF3731.JPG?v=1695928755538" alt="Mila 2019" style="width:100%" onclick="openModal();currentSlide(20)" class="hover-shadow cursor">
+            <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/DSCF4085.JPG?v=1695928774367" alt="Alice Georgia 2019" style="width:100%" onclick="openModal();currentSlide(22)" class="hover-shadow cursor">
+            <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/lauren_2020.JPG?v=1702655013010" alt="Lauren 2020" style="width:100%" onclick="openModal();currentSlide(24)" class="hover-shadow cursor">
+          </div>
+        </div>
+
+       <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          <div class="modal-content">
+
+            <div class="mySlides">
+              <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/lauren_2013.JPG?v=1702655010469" alt="Lauren 2013" style="width:100%">
+              <div class= "caption">
+                <center> Lauren, Brooklyn 2013 </center>
+              </div>
+            </div>
+
+            <div class="mySlides">
+              <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/Eva_2016.JPG?v=1702667079952" alt="EvaOleron2016" style="width:100%">
+              <div class= "caption">
+                <center> Eva, Oléron 2016 </center>
+              </div>
+            </div>
+
+            <div class="mySlides">
+              <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/DSCF3155.JPG?v=1695755842662" alt="Alice" style="width:100%">
+              <div class= "caption">
+                <center> Alice, Juno 2016 </center>
+              </div>
+            </div>
+
+            <div class="mySlides">
+              <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/19E41815-BE3D-4154-89AC-B13CC3213BAA.jpeg?v=1695926915238" alt="Aicha" style="width:100%">
+              <div class= "caption">
+                <center> Aïcha, London 2017 </center>
+              </div>
+            </div>
+
+            <div class="mySlides">
+              <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/2C333BBB-830D-446E-BCC4-A73899C0E9BD.jpeg?v=1695926733371" alt="Self Portrait 1" style="width:100%">
+              <div class= "caption">
+                <center> Montreal 2017 </center>
+              </div>
+            </div>
+
+          <!--  <div class="mySlides">
+              <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/B6C1046E-4B04-440E-B764-019564856A50_1_201_a.jpeg?v=1695927521948" alt="Mirror Self Portrait" style="width:100%">
+               <div class= "caption">
+                <center> Montreal 2017 </center>
+              </div>
+            </div> -->
+            
+            <div class="mySlides">
+              <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/DSCF7626%202.JPG?v=1702668560830" alt="Montreal Statue Self Portrait" style="width:100%">
+              <div class= "caption">
+                <center> Montreal 2017 </center>
+              </div>
+            </div>
+
+            <div class="mySlides">
+              <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/65FA79E5-FFA1-4CCC-9AEC-DB5639B1E9EC_1_201_a.jpeg?v=1695927604885" alt="Eva Evelle" style="width:100%">
+              <div class= "caption">
+                <center> Eva, Evelle 2017 </center>
+              </div>
+            </div>
+                  
+            <div class="mySlides">
+              <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/lauren_2017.JPG?v=1702655011247" alt="Lauren 2018" style="width:100%">
+              <div class= "caption">
+                <center> Lauren, Evelle 2017 </center>
+              </div>
+            </div>
+            
+            <div class="mySlides">
+              <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/EB29DE22-F343-4906-918D-78FE9983F9BC.jpeg?v=1695927869164" alt="Alice FL 2017" style="width:100%">
+              <div class= "caption">
+                <center> Alice, Juno 2017 </center>
+              </div>
+            </div>
+
+            <div class="mySlides">
+              <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/9A3322E3-A2F0-41D7-8DBD-DB1406A43722.jpeg?v=1695927618077" alt="Saint Malo Self Portrait" style="width:100%">
+              <div class= "caption">
+                <center> Saint Malo 2017 </center>
+              </div>
+            </div>
+            
+            <div class="mySlides">
+              <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/85E45AC6-5388-491E-A05F-47EE1C680859.jpeg?v=1695928435002" alt="Roadtrip"  style="width:100%">
+              <div class= "caption">
+                <center> Anna and Alice, On the road 2017 </center>
+              </div>
+            </div>
+
+            <div class="mySlides">
+              <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/Anna_2017.JPG?v=1702666296289" alt="Anna FL 2017" style="width:100%">
+               <div class= "caption">
+                <center> Anna, Juno 2017 </center>
+              </div>
+            </div>
+
+            <div class="mySlides">
+              <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/0C40EF42-FFF0-4F4E-A305-9F037061DAD9.jpeg?v=1695928594476" alt="Seven Years"  style="width:100%">
+               <div class= "caption">
+                <center> Montreal 2018 </center>
+              </div>
+            </div>
+            
+             <div class="mySlides">
+              <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/F56DAF34-999F-4906-A313-8FC4A025A8AD.jpeg?v=1695928453875" alt="FL Self Portrait" style="width:100%">
+               <div class= "caption">
+                <center> Juno 2018 </center>
+              </div>
+            </div>
+            
+            <div class="mySlides">
+              <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/DSCF2409.JPG?v=1695928689648" alt="Montreal Green" style="width:100%">
+               <div class= "caption">
+                <center> Montreal 2018 </center>
+              </div>
+            </div>
+
+            <div class="mySlides">
+              <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/551BC066-6650-4C9A-A768-D072E5883E82.jpeg?v=1695928677462" alt="Self Portrait 2018" style="width:100%">
+               <div class= "caption">
+                <center> Montreal 2018 </center>
+              </div>
+            </div>
+
+            <div class="mySlides">
+              <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/DSCF3374.JPG?v=1695928728375" alt="Montreal 2018 Self Portrait" style="width:100%">
+              <div class= "caption">
+                <center> Montreal 2018 </center>
+              </div>
+            </div>
+
+            <div class="mySlides">
+              <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/DSCF3072.JPG?v=1695928702844" alt="Alice Car" style="width:100%">
+              <div class= "caption">
+                <center> Alice, Miami 2018 </center>
+              </div>
+            </div>
+
+            
+            <div class="mySlides">
+              <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/lauren_2018.JPG?v=1702655012088" alt="Lauren 2018" style="width:100%">
+              <div class= "caption">
+                <center> Lauren, Boulogne-Billancourt 2018 </center>
+              </div>
+            </div>
+
+            <div class="mySlides">
+              <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/DSCF3731.JPG?v=1695928755538" alt="Mila 2019" style="width:100%">
+              <div class= "caption">
+                <center> Mila, Montreal 2019 </center>
+              </div>
+            </div>
+
+            <div class="mySlides">
+              <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/DSCF3937.JPG?v=1695928766169" alt="Alice Florida 2019" style="width:100%">
+              <div class= "caption">
+                <center> Alice, Juno 2019 </center>
+              </div>
+            </div>
+
+            <div class="mySlides">
+              <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/DSCF4085.JPG?v=1695928774367" alt="Alice Georgia 2019" style="width:100%">
+              <div class= "caption">
+                <center> Alice, Savannah 2019 </center>
+              </div>
+            </div>
+            
+            <div class="mySlides">
+              <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/hazel.JPG?v=1702660885653" alt="Hazel" style="width:100%">
+              <div class= "caption">
+                <center> Hazel, Montreal 2019 </center>
+              </div>
+            </div>
+            
+            <div class="mySlides">
+              <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/lauren_2020.JPG?v=1702655013010" alt="Lauren 2020" style="width:100%">
+              <div class= "caption">
+                <center> Lauren, Plogoff 2020 </center>
+              </div>
+            </div>
+            
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+    <!-- END Modal content -->
+          </div>
+    <!-- END modal -->
+        </div>
+
+  <!-- END GRID -->
+      </div>
+
+<!-- END MAIN -->
+    </div>
+    
+    <div class="center" style= "margin-top: 60px">
+      <a href="#top" class = "btn" style="text-decoration:none" >Back to top</a>
+    </div>
+    
+    <footer>
+      <p>&copy; Julie Kerisel 2024 </p>
+    </footer>
+    
+  </body>
+</html>

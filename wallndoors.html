@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+ 
+      * {
+        box-sizing: border-box;
+      }
+
+      .row {
+        margin: 8px -16px;
+      }
+
+      /* Add padding BETWEEN each column */
+      .row,
+      .row > .column {
+        padding: 8px;
+      }
+
+      /* Create two equal columns that floats next to each other */
+      .column {
+       width: 50%;
+       float: left 
+      }
+
+      /* One center column */
+      .column75 {
+       width: 75%;
+       justify-content: center;
+       margin-left: auto;
+       margin-right: auto;
+      }
+
+      .column75 img {
+        margin-top: 30px;  
+      }
+
+      /* Clear floats after rows */ 
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* Responsive layout - makes a two column-layout instead of four columns */
+      @media screen and (max-width: 1000px) {
+        .column {
+          width: 50%;
+        }
+      }
+
+      /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 600px) {
+        .column {
+          width: 100%;
+          justify-content: center;
+          margin-left: auto;
+          margin-right: auto;
+        } 
+        .column img {
+        margin-top: 20px;  
+      }
+         .column75 {
+          width: 100%;
+        } 
+        .column75 img {
+        margin-top: 20px;  
+      }
+      }
+    </style>
+
+
+    <title>Walls + Doors</title>
+    <link rel="icon" type="image/x-icon" href="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/IMG_5040_5-removebg-preview.png?v=1696694077007">
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+  </head>  
+  
+  <body>
+    <!-- MAIN (Center website) -->
+    <div class="main">
+  
+      <a id="top"></a>
+      <h1><a class="one" href="index.html">Julie Kerisel</a></h1>
+
+      <div class="mobile-header">
+        <div class="hamburger-menu" onclick="toggleMenu()">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
+  
+      <nav class="menu">
+        <ul>
+          <li class="submenu">
+          <span> Photo </span>
+            <ul>
+              <li><a href="film.html">Analog</a></li>
+              <li><a href="digital.html">Digital</a></li>
+            </ul>
+          </li>
+          <li class="submenu">
+            <span>Collage </span>
+            <ul>
+              <li><a href="book-one.html">Book I</a></li>
+              <li><a href="book-two.html">Book II</a></li>
+              <li><a href="book-three.html">Book III</a></li>
+              <li><a href="looseleaf.html">Loose Leaf</a></li>
+              <li><a href="wallndoors.html">Walls and Doors</a></li>
+            </ul>
+          </li>
+          <li class="menu">
+            <span> <a href="about.html">About</a> </span>
+          </li>
+        </ul>
+      </nav>   
+  
+      <h2> 53A </h2>
+      <h3>2016-2019</h3>
+
+  <!-- Portfolio Gallery Grid -->
+      <div class="row">
+        <div class="column">
+          <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/IMG_4303.JPG?v=1702231458518" alt="Laundry Door" style="width:100%">
+        </div>
+
+        <div class="column">
+          <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/IMG_8351.JPG?v=1695996403554" alt="Bedroom Door" style="width:100%">
+        </div>
+    <!-- END GRID -->
+      </div>
+    
+      <div class="column75">
+        <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/IMG_8354.JPG?v=1695996404153" alt="Living Room" style="width:100%" >
+      </div>
+
+     <!-- <div class="column75">
+        <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/IMG_8342.JPG?v=1695996402663" alt="Bedroom MTL" style="width:100%" >
+      </div> -->
+
+      <div class="center" style= "margin-top: 60px">
+        <a href="#top" class = "btn" style="text-decoration:none" >Back to top</a>
+      </div>
+    
+      <footer>
+        <p>&copy; Julie Kerisel 2023 </p>
+      </footer>    
+    
+<!-- END MAIN -->
+    </div>  
+  </body>
+</html>
