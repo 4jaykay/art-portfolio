@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  font-family: Helvetica, sans-serif;
+  font-family: HelveticaNeue-Light, sans-serif;
   margin: 0;
   margin-right: 25px;
   margin-left: 25px;
@@ -244,6 +244,13 @@ a.one {
   display: block;
   margin-left: auto;
   margin-right: auto;}
+
+  @media screen and (max-width: 600px) {
+    .content-book23 {
+  width:100%;
+  border: 5px solid #202020;
+ }
+}
       
 .media {
   display: block;
