@@ -4,6 +4,26 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      
+      /* One center column */
+      .column20 {
+       width: 20%;
+       justify-content: center;
+       margin-left: auto;
+       margin-right: auto;
+      }
+       
+      /* Responsive layout */
+      @media screen and (max-width: 600px) {
+        .column20 {
+        width: 40%;
+        }
+      }
+    </style>
 
     <title>Julie Kerisel</title>
     <link rel="icon" type="image/x-icon" href="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/IMG_5040_5-removebg-preview.png?v=1696694077007">
@@ -54,9 +74,11 @@
       
       <br>
       <br>
-      
-      <img src="Images/Front.jpg" alt="Front" style=" width:20% ;border: 5px solid #261a16" class="centerimage">
-      <img src="Images/Back.jpeg" alt="Back" style="width:20% ;border: 5px solid #261a16" class="centerimage">
+
+      <div class"column20">
+      <img src="Images/Front.jpg" alt="Front" style=" width:20% ;border: 5px solid #261a16">
+      <img src="Images/Back.jpeg" alt="Back" style="width:20% ;border: 5px solid #261a16">
+      </div>
  
       <p style= "text-align:center">
        Julie Kerisel (b.1997 Paris, France)
