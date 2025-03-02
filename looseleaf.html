@@ -5,6 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      .row {
+        margin: 0px -16px;
+      }
+
+      /* Add padding BETWEEN each column */
+      .row,
+      .row > .column50 {
+        padding: 12px;
+      }
+
+      /* One center column 60% */
+      .column60 {
+       width: 60%;
+       justify-content: center;
+       margin-left: auto;
+       margin-right: auto;
+      }
+
+      /* Two columns */
+      .column50 {
+       width: 50%;
+       float:left;
+      }
+
+      /* One center column 70% */
+      .column75 {
+       width: 75%;
+       justify-content: center;
+       margin-left: auto;
+       margin-right: auto;
+      }
+
+      /* Clear floats after rows */ 
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }     
+        .column50 img {
+        margin-top: 20px;
+        margin-bottom: -20px;
+      }
+
+       .column60 img {
+        margin-top: 35px;
+      }
+
+      .column75 img {
+        margin-top: 35px;  
+      }
+      
       /* Responsive layout - makes a two column-layout instead of four columns */
       @media screen and (max-width: 1000px) {
         .column {
