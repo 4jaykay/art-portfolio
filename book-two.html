@@ -10,6 +10,10 @@
         box-sizing: border-box;
       }
 
+      .row {
+        margin: 8px -16px;
+        }
+
       /* One center column */
       .column80 {
        width: 80%;
@@ -87,6 +91,7 @@
     <h3> 2021-2022 </h3>
 
 <!-- Portfolio Gallery Grid -->
+  <div class="row">
     <div class="column80">
         <img src="Images/w_Obama.jpg" alt="w_Obama" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor, content-book23">
         <img src="Images/Violin_Hips.jpg" alt="Violin Hips" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor, content-book23">
@@ -99,6 +104,7 @@
         <img src="Images/Green.jpg" alt="Green" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor, content-book23">
         <img src="Images/Pink_and_Orange.jpg" alt="Pink and Orange" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor, content-book23">
     </div>
+  </div>
   
   <!-- The Modal -->
     <div id="myModal" class="modal">
