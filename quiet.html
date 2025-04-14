@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+    <style>
+    
+      * {
+          box-sizing: border-box;
+        }
+
+      .row {
+        margin: 8px -16px;
+        }
+
+      /* Add padding BETWEEN each column */
+      .row,
+      .row > .column {
+        padding: 8px;
+      }
+
+      /* Create two equal columns that floats next to each other */
+      .column {
+        float: left;
+        width: 50%;
+      }
+
+      .column img {
+        margin-top: 12px;
+      }
+
+      /* Clear floats after rows */ 
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }    
+
+      /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 600px) {
+        .column {
+          width: 100%;
+        }
+      }
+    
+    </style>
+    
+    <title>Quiet</title>
+    <link rel="icon" type="image/x-icon" href="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/IMG_5040_5-removebg-preview.png?v=1696694077007">
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    <script src="/script.js" defer></script>
+     
+  </head>  
+  
+  <body>
+    <div class="main">
+      
+      <a id="top"></a>
+      <h1><a class="one" href="index.html">Julie Kerisel</a></h1>
+
+  <!-- MENU -->
+      <div class="mobile-header">
+        <div class="hamburger-menu" onclick="toggleMenu()">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
+
+      <nav class="menu">
+        <ul>
+          <li class="submenu">
+            <span> Photo </span>
+            <ul>
+              <li><a href="film.html">Analog</a></li>
+              <li><a href="digital.html">Digital</a></li>
+              <li><a href="quiet.html">Quietly</a></li>
+            </ul>
+          </li>
+          <li class="submenu">
+            <span>Collage </span>
+              <ul>
+                <li><a href="book-one.html">Book I</a></li>
+                <li><a href="book-two.html">Book II</a></li>
+                <li><a href="book-three.html">Book III</a></li>
+                <li><a href="looseleaf.html">Loose Leaf</a></li>
+                <li><a href="wallndoors.html">Walls and Doors</a></li>
+              </ul>
+          </li>
+          <li class="menu">
+            <span> <a href="about.html">About</a> </span>
+          </li>
+        </ul>
+      </nav>
+
+    <!-- PAGE CONTENT-->
+      <br>
+      <br>
+
+  <!-- Portfolio Gallery Grid -->
+      <div class="row">
+        <div class="column">
+          <div class="content">
+            <img src="Images/Film_Phoebe_NewYork_2014.jpg" alt="Phoebe 2014" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+            <img src="Images/Film_Bird_Brooklyn_2023.jpg" alt="Birds 2023" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+            <img src="Images/Film_Oregon_2023_01.jpg" alt="Oregon 2023 01" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+            <img src="Images/Film_Oregon_2023_02.jpg" alt="Oregon 2023 02" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+            <img src="Images/Film_Vancouver_2023.jpg" alt="Vancouver 2023" style="width:100%">
+            <img src="Images/Film_Brooklyn_2024_02.jpg" alt="Prospect Park 2024"style="width:100%">
+            <img src="Images/Film_ProspectPark_March_2025.jpg" alt="Brooklyn 2025" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+  
+           </div>
+        </div>
+
+        <div class="column">
+          <div class="content">
+            <img src="Images/Film_Cleo_SaintMaurice_2023.jpg" alt="Cleo 2023" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+            <img src="Images/Film_Panda_London_2023.jpg3" alt="Panda 2023" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+            <img src="Images/Film_Bird_Brooklyn_2023_02.jpg" alt="Birds Summer" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+            <img src="Images/Film_Oregon_2023_03.jpg" alt="Oregon 2023 03" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+            <img src="Images/Film_Paris_2023.jpg" alt="Paris 2023" style="width:100%">
+            <img src="Images/Film_Juno_2024.jpg" alt="Juno 2024" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+            <img src="Images/Film_Brooklyn_2024_01.jpg" alt="Prospect Park 2024" style="width:100%" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
+            
+           <!--  <img src="https://cdn.glitch.global/391b9eea-69e4-4608-9ea2-3451d7ce797b/julie_brooklyn.jpeg?v=1696263434997" alt="Julie" style="width:100%" onclick="openModal();currentSlide(12)" class="hover-shadow cursor"> -->
+          </div>
+        </div>
+
+      <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a> 
+
+      <div class="modal-content">
+          <div class="mySlides">
+              <img src="Images/Film_Phoebe_NewYork_2014.jpg" alt="Phoebe 2014" style="width:100%">
+              <div class= "caption">
+                <center> Phoebe, New York 2014 </center>
+              </div>
+            </div>
+        
+           <div class="mySlides">
+              <img src="Images/Film_Cleo_SaintMaurice_2023.jpg" alt="Cleo 2023" style="width:100%">
+               <div class= "caption">
+                <center> Cleo, Saint-Maurice 2023 </center>
+              </div>
+            </div>
+        
+          <div class="mySlides">
+              <img src="Images/Film_Bird_Brooklyn_2023.jpg"  alt="Birds 2023" style="width:100%" >
+              <div class= "caption">
+                <center> Brooklyn 2023 </center>
+              </div>
+            </div>
+        
+          <div class="mySlides">
+              <img src="Images/Film_Panda_London_2023.jpg"  alt="Panda 2023" style="width:100%" >
+              <div class= "caption">
+                <center> Panda, London 2023 </center>
+              </div>
+            </div>
+        
+          <div class="mySlides">
+              <img src="Images/Film_Oregon_2023_01.jpg" alt="Oregon 2023 01" style="width:100%">
+               <div class= "caption">
+                <center> Oregon 2023 </center>
+              </div>
+            </div>
+        
+         <div class="mySlides">
+              <img src="Images/Film_Bird_Brooklyn_2023_02.jpg"  alt="Birds Summer 2023" style="width:100%" >
+              <div class= "caption">
+                <center> Brooklyn 2023 </center>
+              </div>
+            </div>
+          
+        <div class="mySlides">
+              <img src="Images/Film_Oregon_2023_02.jpg" alt="Oregon 2023 02" style="width:100%">
+               <div class= "caption">
+                <center> Oregon 2023 </center>
+              </div>
+            </div>
+        
+        <div class="mySlides">
+              <img src="Images/Film_Oregon_2023_03.jpg" alt="Oregon 2023 03" style="width:100%">
+               <div class= "caption">
+                <center> Oregon 2023 </center>
+              </div>
+            </div>
+        
+            <!--     <div class="mySlides">
+              <img src="Images/Film_Vancouver_2023.jpg" alt="Vancouver 2023" style="width:55%">
+              <div class= "caption">
+                <center> Vancouver 2023 </center>
+              </div>
+            </div>
+        
+             <div class="mySlides">
+              <img src="Images/Film_Paris_2023.jpg" alt="Paris 2023" style="width:100%">
+               <div class= "caption">
+                <center> Paris 2023 </center>
+              </div>
+            </div> 
+        
+        
+          <div class="mySlides">
+              <img src="Images/Film_Brooklyn_2024_02.jpg" alt="Prospect Park 2024 02" style="width:55%">
+              <div class= "caption">
+                <center> Prospect Park 2024 </center>
+              </div>
+            </div> --> 
+        
+        
+          <div class="mySlides">
+              <img src="Images/Film_Juno_2024.jpg" alt="Juno 2024" style="width:68%">
+              <div class= "caption">
+                <center> Juno 2024 </center>
+              </div>
+            </div>
+        
+           <div class="mySlides">
+              <img src="Images/Film_ProspectPark_March_2025.jpg" alt="Prospect Park 2025" style="width:70%">
+              <div class= "caption">
+                <center> Prospect Park 2025 </center>
+              </div>
+            </div>
+        
+          <div class="mySlides">
+              <img src="Images/Film_Brooklyn_2024_01.jpg" alt="Prospect Park 2024 01" style="width:65%">
+              <div class= "caption">
+                <center> Prospect Park 2024 </center>
+              </div>
+            </div> 
+        
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+          </div>
+        </div>
+
+  <!-- END GRID -->
+      </div>
+
+      <div class="center" style= "margin-top: 60px">
+        <a href="#top" class = "btn" style="text-decoration:none" >Back to top</a>
+      </div>
+
+      <footer>
+        <p>&copy; Julie Kerisel 2025 </p>
+      </footer>
+
+<!-- END MAIN -->
+
+    </div>  
+  </body>
+</html>
