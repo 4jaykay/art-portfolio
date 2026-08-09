@@ -43,6 +43,17 @@
         margin-top: 35px;  
       }
 
+      .column60 {
+       width: 60%;
+       justify-content: center;
+       margin-left: auto;
+       margin-right: auto;
+      }
+
+       .column60 img {
+        margin-top: 35px;
+      }
+
       /* Clear floats after rows */ 
       .row:after {
         content: "";
@@ -130,12 +141,30 @@
 
   <br>
   <br>
-      <div class="column75">
-          <img src="Images/Etude_Peek_2026.jpg" alt="Hold On" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
-          <img src="Images/Etude_Bubblewrap_2026.jpg" alt="Mushrooms" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
-          <img src="Images/Etude_Tape_2026.jpg" alt="Scissors" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor, content-book23">
-          <img src="Images/Etude_Hands_2026.jpg" alt="La Mouche" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor, content-book23">
+      <div class="column60">
+          <img src="Images/Etude_Xray_2026.jpg" alt="Hold On" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+          <img src="Images/Etude_Composite_2026.jpg" alt="Mushrooms" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
       </div>
+
+    <br>
+    <br>
+        
+      <div class="row">
+        <div class="column">
+          <div class="content">
+            <img src="Images/Etude_2017_2018_04.jpg" alt="Peek" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+            <img src="Images/Etude_2017_2018_01.jpg" alt="Tape" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+            <img src="Images/Etude_2018_2018_02.jpg" alt="Tape" style="width:100%" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
+           </div>
+        </div>
+
+        <div class="column">
+          <div class="content">
+            <img src="Images/Etude_2017_2018_02.jpg alt="Bubblewrap" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+            <img src="Images/Etude_2017_2018_03.jpg" alt="Hands" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+            <img src="Images/Etude_2018_2018_01.jpg" alt="Tape" style="width:100%" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
+          </div>
+        </div>
 
       <!-- The Modal -->
         <div id="myModal" class="modal">
