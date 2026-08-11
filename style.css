@@ -301,6 +301,12 @@ a.one {
   overflow: auto;
 }
 
+.mySlides img {
+  max-height: 85vh;
+  width: auto;
+  max-width: 100%;
+}
+
 /* The Close Button */
 .close {
   color: white;
