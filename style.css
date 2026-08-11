@@ -301,7 +301,7 @@ a.one {
   max-width: 750px;
   margin: auto;
   text-align: center;
-  overflow: auto;
+  overflow: visible;
 }
 
 .mySlides img {
