@@ -41,7 +41,7 @@ function openModal() {
 
     var modal = document.getElementById("myModal");
     if (modal) {
-        modal.style.display = "block";
+        modal.style.display = "flex";
     }
 }
 function closeModal() {
