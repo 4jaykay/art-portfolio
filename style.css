@@ -301,7 +301,7 @@ a.one {
   max-width: 750px;
   margin: auto;
   text-align: center;
-  overflow: visible;
+  overflow: auto;
 }
 
 .mySlides img {
@@ -348,6 +348,10 @@ a.one {
   user-select: none;
   -webkit-user-select: none;
 }
+
+.prev {
+  left: 0;
+  }
 
 /* Position the "next button" to the right */
 .next {
