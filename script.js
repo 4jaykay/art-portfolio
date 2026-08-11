@@ -60,11 +60,11 @@ document.getElementById('myModal').addEventListener('click', function (event) {
 document.addEventListener('keydown', function (event) {
     var modal = document.getElementById('myModal');
 
-    if (event.key === 'ArrowLeft' && modal.style.display === 'block') {
+    if (event.key === 'ArrowLeft' && modal.style.display === 'flex') {
         plusSlides(-1);
-    } else if (event.key === 'ArrowRight' && modal.style.display === 'block') {
+    } else if (event.key === 'ArrowRight' && modal.style.display === 'flex') {
         plusSlides(1);
-    } else if (event.key === 'Escape' && modal.style.display === 'block') {
+    } else if (event.key === 'Escape' && modal.style.display === 'flex') {
         closeModal();
     }
 });
