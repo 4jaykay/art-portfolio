@@ -41,7 +41,7 @@ function openModal() {
 
     var modal = document.getElementById("myModal");
     if (modal) {
-        modal.style.display = "flex";
+        modal.style.display = "block";
     }
 }
 function closeModal() {
@@ -60,11 +60,11 @@ document.getElementById('myModal').addEventListener('click', function (event) {
 document.addEventListener('keydown', function (event) {
     var modal = document.getElementById('myModal');
 
-    if (event.key === 'ArrowLeft' && modal.style.display === 'flex') {
+    if (event.key === 'ArrowLeft' && modal.style.display === 'block') {
         plusSlides(-1);
-    } else if (event.key === 'ArrowRight' && modal.style.display === 'flex') {
+    } else if (event.key === 'ArrowRight' && modal.style.display === 'block') {
         plusSlides(1);
-    } else if (event.key === 'Escape' && modal.style.display === 'flex') {
+    } else if (event.key === 'Escape' && modal.style.display === 'block') {
         closeModal();
     }
 });
