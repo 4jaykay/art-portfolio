@@ -297,11 +297,11 @@ a.one {
   position: relative;
   margin: 5vh auto;
   display: block;
-  width: 100%;
+  width: 90%;
   max-width: 750px;
   margin: auto;
   text-align: center;
-  overflow: auto;
+  overflow: visible;
 }
 
 .mySlides img {
