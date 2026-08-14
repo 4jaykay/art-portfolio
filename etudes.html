@@ -10,90 +10,95 @@
     <link rel="stylesheet" href="/style.css">
     <script src="/script.js" defer></script>
     
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-    
-      /* Two-column gallery */
-      .row {
-        margin: 8px -40px;
-        padding: 8px;
-      }
-    
-      .row > .column {
-        padding: 8px;
-      }
-    
-      .column {
-        float: left;
-        width: 50%;
-      }
-    
-      .column img {
-        margin-top: 18px;
-      }
-    
-      /* Centered single images */
-      .column60 {
-        width: 60%;
-        margin-left: auto;
-        margin-right: auto;
-      }
-    
-      .column65 {
-        width: 65%;
-        margin-left: auto;
-        margin-right: auto;
-      }
-    
-      .column60 img,
-      .column65 img {
-        margin-top: 20px;
-      }
-    
-      /* Group containing the two centered single images */
-      .etude-single-images {
-        margin-top: 10px;
-        margin-bottom: 40px;
-      }
-    
-      /* Clear floats after rows */
-      .row:after {
-        content: "";
-        display: table;
-        clear: both;
-      }
-    
-      /* Études modal positioning */
-      .modal-content {
-        top: 46%;
-      }
-    
-      /* Mobile layout */
-      @media screen and (max-width: 600px) {
-    
-        .row {
-          margin: 8px 0;
-        }
-    
-        .column {
-          width: 100%;
-        }
-    
-        .column60,
-        .column65 {
-          width: 100%;
-        }
-    
-        .column60 img,
-        .column65 img {
-          margin-top: 20px;
-        }
-    
-      }
-    </style>
-        
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  /* Two-column gallery */
+  .row {
+    margin: 8px -40px;
+    padding: 8px;
+  }
+
+  .row > .column {
+    padding: 8px;
+  }
+
+  .column {
+    float: left;
+    width: 50%;
+  }
+
+  .column img {
+    margin-top: 18px;
+  }
+
+  /* Clear each two-column gallery */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Centered single images */
+  .etude-single-images {
+    clear: both;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  .column60 {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .column65 {
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .column60 img,
+  .column65 img {
+    display: block;
+    margin-top: 20px;
+  }
+
+  /* Études modal positioning */
+  .modal-content {
+    top: 46%;
+  }
+
+  /* Mobile */
+  @media screen and (max-width: 600px) {
+
+    .row {
+      margin: 8px 0;
+    }
+
+    .column {
+      width: 100%;
+    }
+
+    .column60,
+    .column65 {
+      width: 100%;
+    }
+
+    .etude-single-images {
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
+
+    .column60 img,
+    .column65 img {
+      margin-top: 20px;
+    }
+
+  }
+</style>
     <title>Études</title>
     <link rel="icon" type="image/x-icon" href="Images/Tab_Icon.png">
      
@@ -186,7 +191,7 @@
             <img src="Images/Etude_2018_2018_01.jpg" alt="Double nose" style="width:100%" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
           </div>
         </div>
-
+    </div>
       <!-- The Modal -->
         <div id="myModal" class="modal">
           <span class="close cursor" onclick="closeModal()">&times;</span>
