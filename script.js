@@ -94,12 +94,6 @@ function showSlides(n) {
 
 var modal = document.getElementById("myModal");
 
-  if (slideIndex >= 7 && slideIndex <= 12) {
-    modal.classList.add("modalwhite");
-  } else {
-    modal.classList.remove("modalwhite");
-  }
-
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
