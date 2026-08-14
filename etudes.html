@@ -260,11 +260,23 @@
     </div>  
 
      <script>
-        if (slideIndex >= 7 && slideIndex <= 12) {
-          modal.classList.add("modalwhite");
-        } else {
-        modal.classList.remove("modalwhite");
-        }
+     document.addEventListener("DOMContentLoaded", function() {
+
+  var originalShowSlides = showSlides;
+
+  showSlides = function(n) {
+    originalShowSlides(n);
+
+    var modal = document.getElementById("myModal");
+
+    if (slideIndex >= 7 && slideIndex <= 12) {
+      modal.classList.add("modalwhite");
+    } else {
+      modal.classList.remove("modalwhite");
+    }
+  };
+
+});
     </script>
   </body>
 </html>
