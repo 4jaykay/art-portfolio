@@ -67,28 +67,11 @@
 
       /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
       @media screen and (max-width: 600px) {
-        .row {
-      width: 90%;
-      margin: 8px auto;
-    }
-  
-    .column {
-      width: 100%;
-    }
-  
-    .column img {
-      width: 100%;
-    }
-      }
+     .row {
+    margin: 8px 0;
+  }
+}
     </style>
-
-    <script>
-        if (slideIndex >= 7 && slideIndex <= 12) {
-          modal.classList.add("modalwhite");
-        } else {
-        modal.classList.remove("modalwhite");
-        }
-    </script>
     
     <title>Études</title>
     <link rel="icon" type="image/x-icon" href="Images/Tab_Icon.png">
@@ -275,5 +258,13 @@
 <!-- END MAIN -->
 
     </div>  
+
+     <script>
+        if (slideIndex >= 7 && slideIndex <= 12) {
+          modal.classList.add("modalwhite");
+        } else {
+        modal.classList.remove("modalwhite");
+        }
+    </script>
   </body>
 </html>
