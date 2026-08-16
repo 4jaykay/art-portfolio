@@ -42,8 +42,9 @@
   }
 
   h3 {
-  margin-top: 20px;
-  margin-bottom: -25px;
+  margin-top: 50px;
+  margin-bottom: -20px;
+  font-weight: 500; 
 }
 
 /* Centered single images */
@@ -92,6 +93,7 @@
 
 .single-etude h3 {
   margin: 0 0 20px 0;
+  font-weight: 500; 
 }
 
 .single-etude .column60,
@@ -108,33 +110,70 @@
     top: 46%;
   }
 
-  /* Mobile */
-  @media screen and (max-width: 900px) {
-
-    .row {
-      margin: 8px 0;
-    }
-
-    .column {
-      width: 100%;
-    }
-
-    .column60,
-    .column65 {
-      width: 100%;
-    }
-
-    .etude-single-images {
-      margin-top: 60px;
-      margin-bottom: 60px;
-    }
-
-    .column60 img,
-    .column65 img {
-      margin-top: 100px;
-    }
-
+/* Tablet / smaller screens */
+@media screen and (max-width: 900px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 8px 0;
+    padding: 0;
   }
+
+  .column {
+    width: 80%;
+    padding: 0;
+  }
+
+  /* Single-image section */
+  .etude-single-images {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    gap: 20px;
+  }
+
+  .etude-single-images h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-weight: 500; 
+  }
+
+  .column60,
+  .column65 {
+    width: 90%;
+  }
+}
+
+/* Phones */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+
+  .column60,
+  .column65 {
+    width: 100%;
+  }
+
+  .row,
+  .row > .column {
+    padding: 0;
+  }
+
+  .etude-single-images {
+    padding-top: 0;
+    padding-bottom: 20px;
+    gap: 10px;
+  }
+
+  .etude-single-images h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-weight: 500; 
+  }
+}
+
+
 </style>
     <title>Études</title>
     <link rel="icon" type="image/x-icon" href="Images/Tab_Icon.png">
