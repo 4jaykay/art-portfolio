@@ -385,7 +385,7 @@ img.hover-shadow {
 
 /* Mobile version layout changes */
 
- @media screen and (max-width: 600px) {
+ @media screen and (max-width: 900px) {
    img.hover-shadow:hover {opacity: 1;
 }
     .row,
