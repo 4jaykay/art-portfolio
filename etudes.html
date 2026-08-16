@@ -110,6 +110,10 @@
     top: 46%;
   }
 
+  .old-etudes img {
+  max-height: 90vh;
+}
+
 /* Tablet / smaller screens */
 @media screen and (max-width: 900px) {
   .row {
@@ -165,6 +169,14 @@ h3 {
   margin-bottom: 10px;
   
 }
+    .etude-first .column {
+    width: 60%;
+  }
+
+  .etude-last .column {
+    width: 85%;
+  }
+}
 
 /* Phones */
 @media screen and (max-width: 600px) {
@@ -219,7 +231,7 @@ h3 {
 
 h3 {
   margin-bottom: 15px;
-  front-size: 24px;
+  front-size: 32px;
 }
 </style>
     
@@ -273,7 +285,7 @@ h3 {
     <!-- PAGE CONTENT-->
      <h3> 2023 x 2026</h3>
   <!-- Portfolio Gallery Grid -->
-      <div class="row">
+      <div class="row etude-first">
           <div class="column">
             <div class="content">
               <img src="Images/Etude_Peek_2026.jpg" alt="Peek" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
@@ -318,7 +330,7 @@ h3 {
 </div>
 
     <h3 > 2017 x 2018 - 2018 x 2018</h3>  
-    <div class="row">
+    <div class="row etude-last">
         <div class="column">
           <div class="content">
             <img src="Images/Etude_2017_2018_04.jpg" alt="Double face" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
@@ -342,51 +354,51 @@ h3 {
           <a class="next" onclick="plusSlides(1)">&#10095;</a> 
 
       <div class="modal-content">
-          <div class="mySlides">
+          <div class="mySlides old-etudes">
               <img src="Images/Etude_Peek_2026.jpg" alt="Peek" style="width:100%">
             </div>
         
-          <div class="mySlides">
+          <div class="mySlides old-etudes">
               <img src="Images/Etude_Bubblewrap_2026.jpg" alt="Bubblewrap" style="width:100%">
             </div>
         
-          <div class="mySlides">
+          <div class="mySlides old-etudes">
               <img src="Images/Etude_Tape_2026.jpg" alt="Tape"  style="width:100%">
             </div>
 
-            <div class="mySlides">
+            <div class="mySlides old-etudes">
               <img src="Images/Etude_Hands_2026.jpg"  alt="Hands" style="width:100%" >
             </div>
 
-         <div class="mySlides">
+         <div class="mySlides old-etudes">
               <img src="Images/Etude_Xray_2026.jpg"  alt="Xray" style="width:100%" >
           </div>
 
-         <div class="mySlides">
+         <div class="mySlides old-etudes">
               <img src="Images/Etude_Composite_2026.jpg"  alt="Composite" style="width:100%" >
             </div>
 
-         <div class="mySlides">
+         <div class="mySlides old-etudes">
               <img src="Images/Etude_2017_2018_04.jpg"  alt="Double face" style="width:100%" >
             </div>
 
-         <div class="mySlides">
+         <div class="mySlides old-etudes">
               <img src="Images/Etude_2017_2018_02.jpg"  alt="Double mirror" style="width:100%" >
             </div>
 
-         <div class="mySlides">
+         <div class="mySlides old-etudes">
               <img src="Images/Etude_2017_2018_01.jpg"  alt="Etude Florida" style="width:100%" >
             </div>
 
-         <div class="mySlides">
+         <div cclass="mySlides old-etudes">
               <img src="Images/Etude_2017_2018_03.jpg"  alt="Double arc" style="width:100%" >
             </div>
 
-         <div class="mySlides">
+         <div class="mySlides old-etudes">
               <img src="Images/Etude_2018_2018_02.jpg"  alt="Double eye" style="width:100%" >
             </div>
 
-         <div class="mySlides">
+         <div class="mySlides old-etudes">
               <img src="Images/Etude_2018_2018_01.jpg"  alt="Double nose" style="width:100%" >
             </div>
          
