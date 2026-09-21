@@ -500,13 +500,21 @@ h3 {
 
     var modal = document.getElementById("myModal");
 
-     if (slideIndex >= 7 && slideIndex <= 12) {
-      modal.classList.add("modalwhite");
-      modal.classList.add("modal-old-etudes");
-    } else {
-      modal.classList.remove("modalwhite");
-      modal.classList.remove("modal-old-etudes");
-    }
+if (slideIndex >= 7 && slideIndex <= 12) {
+  modal.classList.add("modalwhite");
+  modal.classList.add("modal-old-etudes");
+  modal.classList.remove("modal-new-etudes");
+
+} else if (slideIndex >= 1 && slideIndex <= 4) {
+  modal.classList.add("modal-new-etudes");
+  modal.classList.remove("modal-old-etudes");
+  modal.classList.remove("modalwhite");
+
+} else {
+  modal.classList.remove("modalwhite");
+  modal.classList.remove("modal-old-etudes");
+  modal.classList.remove("modal-new-etudes");
+}
   };
 
 });
