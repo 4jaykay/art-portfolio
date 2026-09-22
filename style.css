@@ -307,16 +307,14 @@ a.one {
   height: auto;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1600px) {
   .modal-content {
-    max-width: 900px;
+    width:90%
+    max-width: 1000px;
   }
 
   .modal-content img {
-    max-width: 100%;
-    max-height: 90vh;
-    width: auto !important;
-    height: auto;
+    max-height: 85vh;
   }
 }
 
