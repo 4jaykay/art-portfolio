@@ -307,16 +307,6 @@ a.one {
   height: auto;
 }
 
-@media (min-width: 1600px) {
-  .modal-content {
-    width:90%
-    max-width: 1000px;
-  }
-
-  .modal-content img {
-    max-height: 85vh;
-  }
-}
 
 /* The Close Button */
 .close {
