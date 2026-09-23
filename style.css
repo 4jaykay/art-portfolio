@@ -290,21 +290,27 @@ a.one {
 
 /* Modal Content */
 .modal-content {
-  position: absolute;
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 90%;
-  max-width: 750px;
-  text-align: center;
+  width: 900px;
+  max-width: 100%;
 }
 
-/* Modal images */
 .modal-content img {
-  max-width: 100%;
+  max-height: 75vh;
+}
+
+@media (min-width: 1800px) {
+  .modal-content img {
+    max-height: 95vh;
+  }
+}
+
+.modal.modal-square .modal-content {
+  width: 100%;
+  max-width: 700px;
+}
+
+.modal.modal-square .modal-content img {
   max-height: 80vh;
-  width: auto !important;
-  height: auto;
 }
 
 
