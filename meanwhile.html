@@ -56,7 +56,7 @@
     }
 
     .modal-rectangle .modal-content {
-      width: 1000px;
+      width: 900px;
       max-width: 100%;
   }
 
@@ -303,7 +303,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
     if ([3, 11, 12].includes(slideIndex)) {
       modal.classList.add("modal-square");
+      modal.classList.remove("modal-rectangle");
     } else {
+      modal.classList.add("modal-rectangle");
       modal.classList.remove("modal-square");
     }
   };
