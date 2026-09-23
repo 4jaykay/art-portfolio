@@ -7,6 +7,7 @@
     
         <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css">
+    <script src="/script.js" defer></script>
 
     <style>
     
@@ -44,6 +45,30 @@
       .modal {
         background-color: rgba(250, 249, 246, .95);
       }
+
+      .modal-square .modal-content {
+      width: 90%;
+      max-width: 750px;
+    }
+    
+    .modal-square .modal-content img {
+      max-height: 80vh;
+    }
+
+      .modal-content {
+      width: 900px;
+      max-width: 100%;
+    }
+    
+    .modal-content img {
+      max-height: 75vh;
+    }
+    
+    @media (min-width: 1800px) {
+      .modal-content img {
+        max-height: 95vh;
+      }
+    }
 
       .caption {
         color: black;
@@ -267,7 +292,7 @@
 
 <!-- END MAIN -->
 
-          <script src="/script.js" defer>
+          <script>
 document.addEventListener("DOMContentLoaded", function() {
   var originalShowSlides = showSlides;
 
