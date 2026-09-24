@@ -50,9 +50,9 @@ function closeModal() {
 }
 
 document.getElementById('myModal').addEventListener('click', function (event) {
-    var image = event.target.closest('.modal-content img');
-
-    if (!image) {
+    if (!event.target.closest('.modal-content img') &&
+        !event.target.closest('.prev') &&
+        !event.target.closest('.next')) {
         closeModal();
     }
 });
