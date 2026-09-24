@@ -50,7 +50,7 @@ function closeModal() {
 }
 
 document.getElementById('myModal').addEventListener('click', function (event) {
-    if (!event.target.closest('.modal-content')) {
+    if (event.target.tagName !== 'IMG') {
         closeModal();
     }
 });
