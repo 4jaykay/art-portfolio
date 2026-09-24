@@ -41,20 +41,6 @@
         clear: both;
       } 
 
-        .modal {
-        background-color: rgba(250, 249, 246, .95);
-      }
-
-      .caption {
-        color: black;
-        padding: 20px;
-        font-weight: 575;
-          }  
-
-        .modal-content {
-        top: 50%;
-        }
-
       /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
    @media screen and (max-width: 900px) {
       .row {
@@ -151,10 +137,10 @@
         </div>
 
       <!-- The Modal -->
-        <div id="myModal" class="modal">
+        <div id="myModal" class="modal modalwhite">
           <span class="close cursor" onclick="closeModal()">&times;</span>
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a> 
+          <a class="prev" onclick="event.stopPropagation(); plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="event.stopPropagation(); plusSlides(1)">&#10095;</a>
 
       <div class="modal-content">
           <div class="mySlides">
