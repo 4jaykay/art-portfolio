@@ -42,10 +42,6 @@
         clear: both;
       }    
 
-      .modal {
-        background-color: rgba(250, 249, 246, .95);
-      }
-
     .modal-square .modal-content {
       width: 100%;
       max-width: 750px;
@@ -66,16 +62,6 @@
         width: auto;
         height: auto;
       }
-
-      .caption {
-        color: black;
-        padding: 20px;
-        font-weight: 600;
-          }  
-
-        .modal-content {
-        top: 50%;
-        }
 
       /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
        @media screen and (max-width: 900px) {
@@ -157,11 +143,10 @@
             <img src="Images/Film_Composite_Flower.jpg" alt="Composite Flower 2026" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
             <img src="Images/Film_Bird_Brooklyn_2023.jpg" alt="Birds 2023" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
             <img src="Images/Film_Maiki_NewYork_2026.jpg" alt="Lola 2026" style="width:100%">
-            <img src="Images/B_Film_Oregon_2023_02.jpg" alt="Oregon 2023 02" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
-          
-            <img src="Images/B_Film_Oregon_2023_01.jpg" alt="Oregon 2023 01" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
-            <img src="Images/Film_Cleo_SaintMaurice_2023.jpg" alt="Cleo 2023" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
-            <img src="Images/Film_Brooklyn_2024_01.jpg" alt="Prospect Park 2024" style="width:100%" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
+            <img src="Images/B_Film_Oregon_2023_02.jpg" alt="Oregon 2023 02" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+            <img src="Images/B_Film_Oregon_2023_01.jpg" alt="Oregon 2023 01" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+            <img src="Images/Film_Cleo_SaintMaurice_2023.jpg" alt="Cleo 2023" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+            <img src="Images/Film_Brooklyn_2024_01.jpg" alt="Prospect Park 2024" style="width:100%" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
             <!-- <img src="Images/Film_Brooklyn_2024_02.jpg" alt="Prospect Park 2024" style="width:100%"> -->
            </div>
         </div>
@@ -171,16 +156,16 @@
             <img src="Images/Film_ProspectPark_March_2025.jpg" alt="Brooklyn 2025" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
             <img src="Images/Film_Birds_Brooklyn_2023_02.jpg" alt="Birds Summer" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
             <img src="Images/Film_Vancouver_2023.jpg" alt="Vancouver 2023" style="width:100%">
-           <img src="Images/Film_Julie_Brooklyn_2026.jpg" alt="Julie 2026" style="width:100%" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
+            <img src="Images/Film_Julie_Brooklyn_2026.jpg" alt="Julie 2026" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
             <img src="Images/Film_Panda_London_2023.jpg" alt="Panda 2023" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
-            <img src="Images/Film_Juno_2024.jpg" alt="Juno 2024" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+            <img src="Images/Film_Juno_2024.jpg" alt="Juno 2024" style="width:100%" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
             
            <!-- <img src="Images/Film_Paris_2023.jpg" alt="Paris 2023" style="width:100%"> -->
           </div>
         </div>
 
       <!-- The Modal -->
-        <div id="myModal" class="modal">
+        <div id="myModal" class="modal modal white">
           <span class="close cursor" onclick="closeModal()">&times;</span>
         <a class="prev" onclick="event.stopPropagation(); plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="event.stopPropagation(); plusSlides(1)">&#10095;</a>
@@ -220,6 +205,13 @@
               <center> Brooklyn 2023 </center>
             </div>
           </div>
+
+        <div class="mySlides rectangle">
+          <img src="Images/Film_Julie_Brooklyn_2026.jpg" alt="Julie 2026" style="width:100%">
+          <div class= "caption">
+            <center> Brooklyn 2026 </center>
+          </div>
+        </div> 
 
           <div class="mySlides rectangle">
             <img src="Images/B_Film_Oregon_2023_02.jpg" alt="Oregon 2023 02" style="width:100%">
@@ -262,13 +254,6 @@
             <center> Prospect Park 2024 </center>
           </div>
         </div> 
-
-        <div class="mySlides rectangle">
-          <img src="Images/Film_Julie_Brooklyn_2026.jpg" alt="Julie 2026" style="width:100%">
-          <div class= "caption">
-            <center> Brooklyn 2026 </center>
-          </div>
-        </div> 
         
             <div class="caption-container">
               <p id="caption"></p>
@@ -298,7 +283,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     var modal = document.getElementById("myModal");
 
-    if ([2, 10, 11].includes(slideIndex)) {
+    if ([2, 11, 12].includes(slideIndex)) {
       modal.classList.add("modal-square");
       modal.classList.remove("modal-rectangle");
     } else {
