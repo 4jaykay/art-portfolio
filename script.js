@@ -50,8 +50,7 @@ function closeModal() {
 }
 
 document.getElementById('myModal').addEventListener('click', function (event) {
-    var modal = document.getElementById('myModal');
-    if (event.target === modal) {
+    if (!event.target.closest('.modal-content')) {
         closeModal();
     }
 });
