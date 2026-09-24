@@ -126,7 +126,6 @@ a.one {
     margin: 0;
     list-style: none;
     display: flex;
-  
 }
 
 .menu li {
@@ -326,6 +325,10 @@ a.one {
     padding: 20px;
     font-weight: 550;
   }  
+
+.modalwhite .caption-white {
+  margin-top: 20px;
+}
 
 .modalwhite .close:hover,
 .modalwhite .close:focus {
