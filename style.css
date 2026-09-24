@@ -336,7 +336,7 @@ a.one {
 .modalwhite .next:hover,
 .modalwhite .next:focus {
   color: #666;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .close:hover,
