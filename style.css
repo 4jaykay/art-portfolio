@@ -317,6 +317,28 @@ a.one {
   font-weight: bold;
 }
 
+.modalwhite .close {
+  color: black;
+}
+
+.modalwhite .close:hover,
+.modalwhite .close:focus {
+  color: #666;
+}
+
+.modalwhite .prev,
+.modalwhite .next {
+  color: black;
+}
+
+.modalwhite .prev:hover,
+.modalwhite .prev:focus,
+.modalwhite .next:hover,
+.modalwhite .next:focus {
+  color: #666;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
 .close:hover,
 .close:focus {
   color: #999;
